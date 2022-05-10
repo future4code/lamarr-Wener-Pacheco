@@ -25,7 +25,16 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  
+  return array.filter(pares =>( pares % 2)===0)
+  //Desafio
+  let novoArray=[]
+    for(let numero of array){
+        if(array.length >=0){
+            if(numero%2===0)
+            novoArray.push(numero)
+        }
+    }
+    return novoArray
 }
 
 // EXERCÍCIO 05
