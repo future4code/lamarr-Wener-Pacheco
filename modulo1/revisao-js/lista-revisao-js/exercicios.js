@@ -5,27 +5,26 @@
 
 // EXERCÍCIO 01
 function retornaTamanhoArray(array) {
-   return array.length
+    return array.length  
 }
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
-  return array.reverse()
+    return array.reverse()
 }
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {
- return array.sort(function(a,b) {
-      if (a>b) return 1;
-      if (a<b) return -1;
-      return 0
-  })
-
+    return array.sort(function(a,b) {
+        if (a>b) return 1;
+        if (a<b) return -1;
+        return 0
+    }) 
 }
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-  return array.filter(pares =>( pares % 2)===0)
+    return array.filter(pares =>( pares % 2)===0)
   //Desafio
   let novoArray=[]
     for(let numero of array){
@@ -60,27 +59,41 @@ function retornaMaiorNumero(array) {
         }
     }
     return maiorNumero
+ 
 }
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
-let maior = math.max(num1,num2)
-let menor = math.min(num1,num2)
-return {
-    maiorNumero: math.max ( num1,num2),
-    maiorDivisivelPorMenor: ((math.max(num1,num2) % (math.min(num1,num2))===0)=== true),
-    diferenca: math.max(num1,num2) - math.min(num1,num2)
-}
+    let comparativos = {
+        maiorNumero: math.max (num1,num2),
+        maiorDivisivelPorMenor: (math.max(num1,num2) % math.min(num1,num2))===0,
+        diferenca: (math.max(num1,num2) - math.min(num1,num2))
+    }
+        return comparativos;
 }
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+    let numerosPares = [];
+    for (let i = 0; numerosPares.length < n; i++) {
+        if (i % 2 == 0) {
+            numerosPares.push(i);
+        }
+    }
+    return numerosPares; 
 }
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {
-
+    let classificacao
+    if(ladoA===ladoB&&ladoB===ladoC&&ladoA===ladoC){
+        classificacao = "Equilátero"
+        }else if(ladoA===ladoB||ladoB===ladoC||ladoA===ladoC) {
+        classificacao = "Isósceles"
+    }else{
+        classificacao = "Escaleno"
+    }
+return classificacao
 }
 
 // EXERCÍCIO 10
