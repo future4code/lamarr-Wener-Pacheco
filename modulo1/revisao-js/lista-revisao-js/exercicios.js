@@ -98,7 +98,10 @@ return classificacao
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
+  let arrayNovoMaximo=  array.splice(Math.max(array,1))
+  let arrayNovoMinimo= arrayNovoMaximo.splice(Math.min(array,1))
+
+  return Math.max(arrayNovoMinimo),Math.min(arrayNovoMinimo)
 }
 
 // EXERCÍCIO 11
