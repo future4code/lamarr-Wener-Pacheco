@@ -5,12 +5,12 @@
 
 // EXERCÍCIO 01
 function retornaTamanhoArray(array) {
-    return array.length  
+return array.length
 }
 
 // EXERCÍCIO 02
 function retornaArrayInvertido(array) {
-    return array.reverse()
+return array.reverse()
 }
 
 // EXERCÍCIO 03
@@ -25,15 +25,15 @@ function retornaArrayOrdenado(array) {
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
     return array.filter(pares =>( pares % 2)===0)
-  //Desafio
-  let novoArray=[]
-    for(let numero of array){
-        if(array.length >=0){
-            if(numero%2===0)
-            novoArray.push(numero)
-        }
-    }
-    return novoArray
+    //Desafio
+    let novoArray=[]
+      for(let numero of array){
+          if(array.length >=0){
+              if(numero%2===0)
+              novoArray.push(numero)
+          }
+      }
+      return novoArray
 }
 
 // EXERCÍCIO 05
@@ -59,7 +59,6 @@ function retornaMaiorNumero(array) {
         }
     }
     return maiorNumero
- 
 }
 
 // EXERCÍCIO 07
@@ -98,19 +97,27 @@ return classificacao
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  let arrayNovoMaximo=  array.splice(Math.max(array,1))
-  let arrayNovoMinimo= arrayNovoMaximo.splice(Math.min(array,1))
-
-  return Math.max(arrayNovoMinimo),Math.min(arrayNovoMinimo)
+   
+    let arrayNovoMaximo=  array.splice(Math.max(array,1))
+    let arrayNovoMinimo= arrayNovoMaximo.splice(Math.min(array,1))
+  
+    return Math.max(arrayNovoMinimo),Math.min(arrayNovoMinimo)
 }
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+       
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores.join(", ")}.`
+       
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
+
+    let pessoaAnonimo = {...pessoa} 
+     pessoaAnonimo.nome = "ANÔNIMO"
+
+    return pessoaAnonimo
    
 }
 
