@@ -155,6 +155,12 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
+const valoresCompras = [contas.compras]
+
+var totalCompras = 0
+for(var i =0; i < valoresCompras.length; i++){
+    totalCompras += valoresComprasCompras[i]
+}
 
 }
 
