@@ -97,12 +97,37 @@ return classificacao
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-    let arrayNovoMaximo=  array.splice(Math.max(array,1))
-    let arrayNovoMinimo= arrayNovoMaximo.splice(Math.min(array,1))
-  
-    return Math.max(arrayNovoMinimo),Math.min(arrayNovoMinimo)
-
+    let maiorNumero = 0
+    for( let i = 0 ; i < array.length ; i++ ){ 
+        let numeroTeste = arrayl[i]
+            if( numeroTeste > maiorNumero ){
+                maiorNumero=numeroTeste
+              array.splice(maiorNumero,1)
+            }
+    let menorNumero = 900
+            
+    for( let i = 0 ; i < array.length ; i++ ){ 
+        let numeroTeste = novoMaior[i]
+            if( numeroTeste < menorNumero ){  
+                menorNumero=numeroTeste
+                 array.splice(menorNumero,1);
+            }
+        let novoMaior =0
+        let novoMenor = 9999
+            for( let i = 0 ; i < array.length ; i++ ){ 
+            let numeroTeste = arrayl[i]
+                if( numeroTeste > novoMaior ){
+                    novoMaior=numeroTeste
+                }if (numeroTeste < novoMenor ){
+                    novoMenor=numeroTeste
+                }
+            }
+        }
+    }
+    return novoMaior,novoMenor
+   
 }
+
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
@@ -144,16 +169,11 @@ function retornaPessoasNaoAutorizadas(pessoas) {
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
-    let somaCompras = 0
-        for(item of contas.compras){
-        somaCompras = item+somaCompras
-        }
-        contas.saldoTotal = contas.saldoTotal-somaCompras
-    
-    return [...contas]
+    // let somaCompras = 0
+    //     for(item of contas.compras){
+    //     somaCompras = item+somaCompras
+   
 }
-         
-
 
 
 
@@ -167,5 +187,8 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
-    
+    const datasOrdenadas = consultas.sort((a,b)=>{
+        return a.consultasData.reverse()-b.consultasData.reverse();
+    })
+    return datasOrdenadas 
 }
