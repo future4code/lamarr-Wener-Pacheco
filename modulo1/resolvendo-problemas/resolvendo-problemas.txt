@@ -1,0 +1,27 @@
+Os 7 Passos Fundamentais.
+
+1 - Ter atenção no Enunciado.
+    Ler o enunciado inteiro, interpretar o que está realmente escrito
+o que se espera conseguir com a execução do código.
+
+2 - Retirar Informações Relevantes.
+    Identificar TODAS as informações realmente relevantes existentes no 
+enunciado.
+
+3 - Pensar Entradas e Saídas.
+    Pensar na forma que os dados serão inseridos no código e qual o formato 
+de saída que acontecerá.
+
+4- Fazer um esquema visual.
+    Crie um fluxograma ou alguma forma de esquema visual identificando o que 
+o código deverá fazer e o tipo de respostas que se espera  
+
+5 - Criar código Feio.
+    Criar um código rascunho, com as opções pensadas inicialmente
+
+6 - Testar Força-Bruta.
+    Ver se o código feio funciona
+
+7 - Refatorar.
+    Verificar se é possível "resumir/simplificar" alguma etapa do código, 
+para deixá-lo mais estéticamente simples.
