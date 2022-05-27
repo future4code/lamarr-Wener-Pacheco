@@ -1,0 +1,30 @@
+header{
+       margin: 0;
+
+}
+
+nav{
+    text-align: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("img/fundo_logo.png");
+    
+}
+
+main{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:large;
+    margin-top: 5% ;
+}
+
+footer{
+position:fixed;
+bottom:0px;
+background-image: url("img/rodape.png");
+width: 100%;
+text-align: center;
+}
