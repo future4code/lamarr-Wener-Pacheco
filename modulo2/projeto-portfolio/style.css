@@ -17,14 +17,22 @@ body {
 main{
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:large;
+    font-size:xx-large;
+    line-height: 1.6;
     margin-top: 5% ;
 }
 
+div.box{
+    width: auto;
+    display: inline-block;
+}
+
 footer{
-position:fixed;
-bottom:0px;
+position:relative;
+bottom:0;
 background-image: url("img/rodape.png");
 width: 100%;
+max-height: 20%;
+margin-top: 35%;
 text-align: center;
 }
