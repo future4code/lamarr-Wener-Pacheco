@@ -1,0 +1,69 @@
+h1{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+   color:darkred;
+   text-align: center;
+   font-size: xxx-large;
+   background-color: aquamarine;
+}
+
+h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:brown;
+    text-align: center;
+    font-size: large;
+    background-color: aquamarine;
+  }
+
+h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:brown;
+    text-align: center;
+    font-size: xx-large;
+    background-color: aquamarine; 
+}
+
+h4 {
+    color:black;
+    text-align: left;
+    font-size:large
+    }
+
+h5{
+        color:black;
+        text-align: left;
+        font-size:large
+        }
+h6{
+    color:black;
+    text-align:left;
+    font-size:large
+}
+h7{
+    color:black;
+    text-align:left;
+    font-size:large 
+}
+h8{
+    color:black;
+    text-align:left;
+    font-size:large
+}
+body {
+    background-image: url(img/parede.png);
+    
+}
+
+nav{
+    text-align: center;
+    color: black;
+    background-color: bisque;
+}
+
+p{
+    text-align: center;
+    font-size: larger;
+}
+
+footer{
+    padding: 0px;
+}
