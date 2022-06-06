@@ -1,0 +1,25 @@
+
+.header{
+    display: flex ;
+    justify-content: space-evenly;
+    background-color:mediumvioletred ;
+    
+}
+
+.nav{
+    display:flex;
+    justify-content: flex-start;
+        background-color: #f2d0e0 ;
+        margin-right: 80%;
+    
+   }
+.text{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    
+}
+
+.rodape{
+    background-color: mediumvioletred;
+    text-align: center
+}
