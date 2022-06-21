@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.perfil img {
+  border-radius: 30%;
+  max-width: 15%;
+  max-height: 10%;
+}
+
+.saudacao {
+  color: red;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin-top: 0%;
+  font-size: larger;
+}
+
+.texto {
+  line-height: 25px;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.digaOi {
+  animation: pulse 0.7s infinite;
+  margin: 0 auto;
+  display: table;
+  margin-top: 20px;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  margin-bottom: 100px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -webkit-filter: brightness(100%);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    -webkit-filter: brightness(200%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+
+  100% {
+    transform: scale(1.1);
+    filter: brightness(200%);
+  }
+}
