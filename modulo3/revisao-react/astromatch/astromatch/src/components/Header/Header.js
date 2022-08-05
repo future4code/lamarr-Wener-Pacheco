@@ -1,9 +1,15 @@
+import { HeaderContainer } from './style'; 
+//import casal_astronauta from './img/casal_astronauta';
+//import coracoes from './img/coracoes.png';
 
 export function Header (){
-
-<header className="App-header">
-        <img src={casal_astronauta} className="App-logo" alt="logo" />
+         return(
+  <HeaderContainer>
+        
         <h1><i>ASTROMATCH</i></h1>
-        <img src={coracoes} className="Header-coracoes" alt="logo" />
-          </header>
+        
+  </HeaderContainer>        
+)
 }
+
+export default Header;

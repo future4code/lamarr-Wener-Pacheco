@@ -1,16 +1,17 @@
-import React from 'react';
-import Styled from './components/PerfilCardStyle.css'
-import users from './MockupDeDados.js.js.js'
+import {CardContainer} from './style';
 
-export function PerfilCard() {
+export function CardPerfil(props) {
+    const{img,name,description} = props
     return(
-        <>
-        <h1>PerfilCard</h1>
-        </>
+        <CardContainer>
+        <img src={img} alt={name}/>
+        <h2>{name}</h2>
+        <p>{description}</p>
+        </CardContainer>
     )
 }
 
-export default PerfilCard;
+export default CardPerfil;
 
 
 
