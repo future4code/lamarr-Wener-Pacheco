@@ -1,40 +1,62 @@
 import Header from "../../components/Header/Header";
-import{CardPerfil} from "../../components/PerfilCard/PerfilCard";
+import React,{useEffect,useState} from "react";
+import axios from 'axios'
+
+// import{CardPerfil} from "../../components/PerfilCard/PerfilCard";
 import{HomePageContainer} from "./style";
-import { useState } from "react";
+// import { useState } from "react";
 
-export function Homepage(props){
-    const {results}=props
+// export function Homepage(props){
+//     const {results}=props
 
-    const{image, name, description, query, orderParam} = props.states
+//     const{image, name, description, query, orderParam} = props.states
 
-    const {handleInputName, handleInputImage, handleInputDescription,handleInputQuery, handleInputOrderParam} = props.handlers
-    const {addUser} = props
-    const {removeUser} = props
-    const {changePage} = props
+//     const {handleInputName, handleInputImage, handleInputDescription,handleInputQuery, handleInputOrderParam} = props.handlers
+//     const {addUser} = props
+//     const {removeUser} = props
+//     const {changePage} = props
    
-
-
-const renderList = results
-.filter(char => query === ""||char.name.toLowerCase().includes(query))
-.sort((a,b)=>orderParam===""||orderParam==="asc" &&  a.name>b.name ? 1 : -1 )
-.sort((a,b)=>orderParam===""||orderParam==="desc" &&  a.name>b.name ? -1 : 1 )
-.map(char=>
-    <CardPerfil key={char.id}
-        id={char.id}
-        img={char.img}
-        name={char.name}
-        description={char.description}
-        removeUser={removeUser}
-        changePage={changePage}
-        />
+const Escolhas =()=>{
+    const [profileToChoose,setProfileToChose]=useState([]);
+    const componenteChoose = profileToChoose.map((item,index)=>
+    return(
+        <HomePageContainer>
+            {item}
+        </HomePageContainer>
     )
+    )}
+
+
+
+    
+
+// const renderList = results
+// .filter(char => query === ""||char.name.toLowerCase().includes(query))
+// .sort((a,b)=>orderParam===""||orderParam==="asc" &&  a.name>b.name ? 1 : -1 )
+// .sort((a,b)=>orderParam===""||orderParam==="desc" &&  a.name>b.name ? -1 : 1 )
+// .map(char=>
+//     <CardPerfil key={char.id}
+//         id={char.id}
+//         img={char.img}
+//         name={char.name}
+//         description={char.description}
+//         removeUser={removeUser}
+//         changePage={changePage}
+//         />
+//     )
+
+
+
+
+
+
+
 
     return(
         <>
         <Header/>
         <HomePageContainer>
-           <aside>
+           {/* <aside>
             <form>
                 <label htmlFor="image">Imagem:</label>
                 <input type="text" 
@@ -73,7 +95,7 @@ const renderList = results
             
             <main>
                 {renderList}
-            </main>
+    </main>*/}
             </HomePageContainer>
           </>  
     )}

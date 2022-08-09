@@ -2,8 +2,9 @@
 import { GlobalStyle } from './GlobalStyle.js';
 import {users} from '../src/MockupDeDados';
 import{Homepage} from './pages/Homepage/Homepage';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import{DetailsPage} from './pages/DetailsPage/DetailsPage';
+import axios from 'axios';
 
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
   const[orderParam, setOrderParam] = useState('')
   const[page, setPage]= useState('homepage')
   const[id, setId]= useState(0)
+
+  useEffect(()=>{
+ //get lista da API
+},[])
 
   const handleInputImage = (event) => setImage(event.target.value);
   const handleInputName = (event) => setName(event.target.value);
