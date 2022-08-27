@@ -15,7 +15,7 @@ const HomePage=()=>{
     return(
         <>
    <h1>HomePage</h1>
-   <button onClick={publico}>Ver Viagens</button>
+   <button onClick={publico}>Lista Viagens</button>
    <button onClick={restrito}>Painel Administrativo</button>
    </>
 )}

@@ -5,7 +5,7 @@ export function useRequestData(url) {
     const[data,setData]=useState(undefined)
 
 useEffect(()=>{
-    axios.get(url)
+    axios.post(url)
     .then((res)=>setData(res.data))
     .catch((err)=> console.log(err.response.data),[url])
     return data

@@ -1,22 +1,12 @@
 import React,{useState} from "react"
+import { useForm } from "../../hooks/useForm"
 
 export const Login=()=>{
-    //const [email,setEmail]= useState("")
-    //const[senha,setSenha]=useState("")
-    const[form,setForm] = useState({email:"", senha:""})
+    
+   const[form, onChange]= useForm({email:"", senha:""})
 
-    const mudaEmail=(event)=>{
-        setForm({email:event.target.value})
-    }
-
-    const mudaSenha = (event)=>{
-        setForm({senha:event.target.value})
-    }
-
-
-
-    const fazerLogin=()=>{
-        //event.prevent.default
+       const fazerLogin=()=>{
+        //event.preventDefault()
         //axios.post(url,body,headers)
     }
 
@@ -29,8 +19,8 @@ export const Login=()=>{
             name="email"
             id="email"
             placeholder="E-mail"
-            value={email}
-            onChange={mudaEmail}
+            value={form.email}
+            onChange={onChange}
             type="email"
             required
             />
@@ -39,8 +29,8 @@ export const Login=()=>{
             name="senha"
             id="senha"
             placeholder="Senha"
-            value={senha}
-            onChange={mudaSenha}
+            value={form.senha}
+            onChange={onChange}
             type="password"
             required
             />
